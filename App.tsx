@@ -8,13 +8,13 @@ export default function App() {
   const [visible, setVisible] = useState(false);
   /*
   const [registrationData, setRegistrationData] = useState([]);
-
+*/
   const addNameHandler = nameData => {
     setRegistrationData(currentData => [...currentData,
       {id: "Name", value: nameData}
     ]);
   };
-  */
+  
 
   //If the user wish to cancel the registration, this function enables to change the state
   const cancelGoalAdditionHandler = () => {

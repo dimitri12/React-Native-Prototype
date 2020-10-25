@@ -40,7 +40,7 @@ const Form_FLN = props => {
       if(name.trim()==''){
         return false;
       }else{
-        console.log("Name: " + name);
+        console.log("Full Name: " + name);
         return true;
       }
     };
@@ -110,26 +110,26 @@ const Form_FLN = props => {
           if(confirmInput2(enteredPn)){
           if(confirmInput3(enteredEmail)){
             if(confirmInput4(enteredPhone)){
-              console.log("Mobile number:" + enteredPhone);
+              
               console.log("Country:" + enteredCountry);
               setEnteredPhone('');
               setEnteredCountry('');
             }else{
               Alert.alert("Phone Number is not correct")
             }
-          console.log("Email address" + enteredEmail);
+          
           setEnteredEmail('');
         
         }
         else {
           Alert.alert("Email not correct")
         }
-        console.log("Personal Number" + enteredPn);
+        
         setEnteredPn('');
       }else {
         Alert.alert("Personal Number is not correct")
       }
-      console.log("Full Name" + enteredName);
+      
       setEnteredName(''); 
     }else {
       Alert.alert("Name is not correct")
